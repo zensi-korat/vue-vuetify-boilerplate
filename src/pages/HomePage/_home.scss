@@ -1,0 +1,3 @@
+.home-heading {
+  @include typography(30px, 600, 20px, var(--black), center);
+}
