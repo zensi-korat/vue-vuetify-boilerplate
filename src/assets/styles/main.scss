@@ -1,0 +1,19 @@
+//reset
+@import "./vendor/reset";
+
+//base
+@import "./variables";
+@import "./mixins/mixins";
+@import "./mixins/breakpoints";
+
+//components
+@import "./components/app";
+// @import '../../components/Layout/layout';
+// @import './components/ant-layout';
+
+//views/pages
+@import "../../pages/AboutPage/about";
+@import "../../pages/HomePage/home";
+
+@import "./global";
+@import "./antd/index.scss";

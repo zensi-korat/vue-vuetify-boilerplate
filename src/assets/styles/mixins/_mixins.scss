@@ -1,0 +1,22 @@
+@mixin flexbox($direction: row, $wrap: nowrap, $justify: center, $align: center, $gap: 0px) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin typography(
+  $font-size: 16px,
+  $font-weight: normal,
+  $line-height: 1.5,
+  $color: var(--black),
+  $text-align: inherit
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color;
+  text-align: $text-align;
+}

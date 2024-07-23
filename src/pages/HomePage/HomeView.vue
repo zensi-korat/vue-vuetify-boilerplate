@@ -23,7 +23,7 @@
   <v-btn variant="outlined">Outlined</v-btn>
   <v-btn variant="flat">flat</v-btn>
   <v-btn variant="text">Text</v-btn>
-  <v-btn variant="elevated">Elevated</v-btn>
-  <v-btn variant="tonal">Tonal</v-btn>
+  <v-btn variant="elevated" size="x-small">Elevated</v-btn>
+  <v-btn variant="tonal" rounded="xl">Tonal</v-btn>
   <v-btn variant="plain">Plain</v-btn>
 </template>
