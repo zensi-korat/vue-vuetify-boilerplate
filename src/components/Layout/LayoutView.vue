@@ -6,6 +6,9 @@
           <v-btn @click.stop="toggleDrawer" icon>
             <v-icon>mdi-menu</v-icon>
           </v-btn>
+          <v-btn @click="toggleTheme">
+            {{ themeColor === "dark" ? "Light Mode" : "Dark Mode" }}
+          </v-btn>
           <v-spacer></v-spacer>
           <v-btn icon @click="changeTheme">
             <v-icon
@@ -51,6 +54,13 @@
 import { ref } from "vue";
 import { useTheme } from "vuetify";
 const theme = useTheme();
+
+import { useThemeSwitcher } from "@/context/composables/useTheme";
+const { themeColor, toggleTheme } = useThemeSwitcher();
+
+// const toggleTheme = (value: string) => {
+//   setThemeColor(value as "default" | "dark");
+// };
 
 const darkTheme = ref(false);
 const drawer = ref(true);

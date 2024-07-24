@@ -1,7 +1,7 @@
 <template>
-  <ThemeProvider>
-    <LayoutView />
-  </ThemeProvider>
+  <!-- <ThemeProvider> -->
+  <LayoutView />
+  <!-- </ThemeProvider> -->
 </template>
 
 <script lang="ts" setup>
