@@ -1,12 +1,7 @@
-/**
- * plugins/vuetify.ts
- *
- * Framework documentation: https://vuetifyjs.com`
- */
-
 // Styles
 import "@mdi/font/css/materialdesignicons.css";
 import "vuetify/styles";
+// import "../assets/styles/main.scss";
 
 // Composables
 import { createVuetify } from "vuetify";
