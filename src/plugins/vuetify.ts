@@ -13,7 +13,7 @@ export default createVuetify({
     themes: {
       light: {
         colors: {
-          zensi: "green",
+          primary: "green",
           secondary: "#424242",
           accent: "#82B1FF",
           error: "#FF5252",
@@ -24,7 +24,7 @@ export default createVuetify({
       },
       dark: {
         colors: {
-          zensi: "black",
+          primary: "orange",
           secondary: "#424242",
           accent: "#FF4081",
           error: "#FF5252",
