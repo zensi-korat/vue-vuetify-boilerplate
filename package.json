@@ -7,11 +7,13 @@
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
     "core-js": "^3.37.1",
+    "husky": "^9.1.4",
     "roboto-fontface": "*",
     "vue": "^3.4.31",
     "vuetify": "^3.6.11"
@@ -29,7 +31,9 @@
     "@storybook/vue3-vite": "^8.2.7",
     "@types/node": "^20.14.10",
     "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
@@ -38,6 +42,7 @@
     "eslint-plugin-promise": "^6.4.0",
     "eslint-plugin-storybook": "^0.8.0",
     "eslint-plugin-vue": "^9.27.0",
+    "prettier": "^3.3.3",
     "sass": "1.77.6",
     "storybook": "^8.2.7",
     "typescript": "^5.4.2",

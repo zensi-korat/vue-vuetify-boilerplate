@@ -6,9 +6,7 @@
           <v-btn @click.stop="toggleDrawer" icon>
             <v-icon>mdi-menu</v-icon>
           </v-btn>
-          <v-btn @click="toggleTheme">
-            {{ themeColor === "dark" ? "Light Mode" : "Dark Mode" }}
-          </v-btn>
+          <SimformLogo />
           <v-spacer></v-spacer>
           <v-btn icon @click="changeTheme">
             <v-icon
@@ -51,12 +49,11 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-import { useTheme } from "vuetify";
+import { ref } from 'vue';
+import { useTheme } from 'vuetify';
 const theme = useTheme();
 
-import { useThemeSwitcher } from "@/context/composables/useTheme";
-const { themeColor, toggleTheme } = useThemeSwitcher();
+import SimformLogo from '../Icons/SimformLogo.vue';
 
 // const toggleTheme = (value: string) => {
 //   setThemeColor(value as "default" | "dark");
@@ -66,12 +63,12 @@ const darkTheme = ref(false);
 const drawer = ref(true);
 const rail = ref(false);
 
-const currentTheme = ref("light");
+const currentTheme = ref('light');
 
 function changeTheme() {
   //   darkTheme.value = !darkTheme.value;
   //   theme.global.name.value = darkTheme.value ? "dark" : "light";
-  currentTheme.value = currentTheme.value === "light" ? "dark" : "light";
+  currentTheme.value = currentTheme.value === 'light' ? 'dark' : 'light';
   theme.global.name.value = currentTheme.value;
 }
 

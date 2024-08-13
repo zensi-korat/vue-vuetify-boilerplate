@@ -5,35 +5,35 @@
  */
 
 // Composables
-import { createRouter, createWebHistory } from "vue-router/auto";
-import HomeView from "../pages/HomePage/HomeView.vue";
-import AboutView from "../pages/AboutPage/AboutView.vue";
+import { createRouter, createWebHistory } from 'vue-router/auto';
+import HomeView from '../pages/HomePage/HomeView.vue';
+import AboutView from '../pages/AboutPage/AboutView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: "/",
-      name: "home",
-      component: HomeView,
+      path: '/',
+      name: 'home',
+      component: HomeView
     },
     {
-      path: "/about",
-      name: "about",
-      component: AboutView,
-    },
-  ],
+      path: '/about',
+      name: 'about',
+      component: AboutView
+    }
+  ]
 });
 
 // Workaround for https://github.com/vitejs/vite/issues/11804
 router.onError((err, to) => {
-  if (err?.message?.includes?.("Failed to fetch dynamically imported module")) {
-    if (!localStorage.getItem("vuetify:dynamic-reload")) {
-      console.log("Reloading page to fix dynamic import error");
-      localStorage.setItem("vuetify:dynamic-reload", "true");
+  if (err?.message?.includes?.('Failed to fetch dynamically imported module')) {
+    if (!localStorage.getItem('vuetify:dynamic-reload')) {
+      console.log('Reloading page to fix dynamic import error');
+      localStorage.setItem('vuetify:dynamic-reload', 'true');
       location.assign(to.fullPath);
     } else {
-      console.error("Dynamic import error, reloading page did not fix it", err);
+      console.error('Dynamic import error, reloading page did not fix it', err);
     }
   } else {
     console.error(err);
@@ -41,7 +41,7 @@ router.onError((err, to) => {
 });
 
 router.isReady().then(() => {
-  localStorage.removeItem("vuetify:dynamic-reload");
+  localStorage.removeItem('vuetify:dynamic-reload');
 });
 
 export default router;

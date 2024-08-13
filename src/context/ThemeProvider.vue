@@ -8,12 +8,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue';
 
-const currentTheme = ref("light");
+const currentTheme = ref('light');
 
 const toggleTheme = () => {
-  currentTheme.value = currentTheme.value === "light" ? "dark" : "light";
+  currentTheme.value = currentTheme.value === 'light' ? 'dark' : 'light';
 };
 </script>
 

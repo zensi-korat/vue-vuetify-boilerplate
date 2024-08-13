@@ -1,10 +1,10 @@
 export const componentTokens = {
   global: {
-    ripple: false,
+    ripple: false
   },
   VBtn: {
-    color: "red",
-    variant: "outlined",
-    rounded: true,
-  },
+    color: 'red',
+    variant: 'outlined',
+    rounded: true
+  }
 };

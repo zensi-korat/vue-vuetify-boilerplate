@@ -11,5 +11,6 @@ declare module 'vue' {
     LayoutView: typeof import('./src/components/Layout/LayoutView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SimformLogo: typeof import('./src/components/Icons/SimformLogo.vue')['default']
   }
 }
